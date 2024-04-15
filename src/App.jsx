@@ -1,6 +1,7 @@
 import './assets/fonts/pretendard.css';
 import './assets/fonts/pretendard-subset.css';
 import './assets/styles/reset.css';
+import './assets/styles/global.css';
 import './assets/styles/style.scss';
 
 import Header from './components/Header';
