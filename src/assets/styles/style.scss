@@ -1,0 +1,55 @@
+body{
+    background: red;
+    height: 1000px;
+}
+//헤더
+#header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(40px);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    > .inner{
+        position: relative;
+        display: flex;
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0px 48px;
+        box-sizing: border-box;
+        justify-content: space-between;
+        align-items: center;
+        flex-shrink: 0;
+        align-self: stretch;
+    }
+    .down-wrap{
+        display: flex;
+        flex-direction: row;
+        justify-items: flex-end;
+        gap: 16px;
+    }
+}
+
+.contnents-container{
+    position: relative;
+    > .inner{
+        position: relative;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding-top: 100px;
+    }
+}
+
+//메인 비쥬얼 섹션
+.mainvisual-container{
+    position: relative;
+    height: 640px;
+    > .inner{
+        position: relative;
+    }
+}
