@@ -13,7 +13,7 @@ body{
     display: flex;
     align-items: center;
     z-index: 999;
-    > .inner{
+    > .inner {
         position: relative;
         display: flex;
         width: 100%;
@@ -43,8 +43,6 @@ body{
     position: relative;
     > .inner{
         position: relative;
-        max-width: 1440px;
-        margin: 0 auto;
         padding-top: 100px;
     }
 }
@@ -52,7 +50,8 @@ body{
 //메인 비쥬얼 섹션
 .mainvisual-container{
     position: relative;
-    width: 100%;
+    width: 1440px;
+    margin: 0 auto;
     height: 640px;
     border-radius: 40px;
     box-sizing: border-box;
@@ -75,7 +74,6 @@ body{
             background: #fff;
             margin: 0;
         }
-
         > .title-wrap {
             position: relative;
             padding-bottom: 48px;
@@ -90,7 +88,6 @@ body{
                 }
             }
         }
-
         .down-wrap{
             position: relative;
             margin-top: 40px;
@@ -108,7 +105,6 @@ body{
                 gap: 16px;
             }
         }
-
     }
     .visual-wrap{
         position: absolute;
@@ -122,5 +118,124 @@ body{
         background-repeat: no-repeat;
         background-position: top -600px left -180px;
     }
-
 }
+//섹션 공통
+.section{
+    position: relative;
+    width: 100%;
+    > .inner {
+        position: relative;
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+    }   
+}
+//섹션01
+.section01{
+    margin-top: 120px;
+    padding-bottom: 100px;
+    .title-wrap{
+        width: 100%;
+        text-align: center;
+        > p {
+            color: var(--gray500);
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 140%;
+        }
+        > h2 {
+            color: var(--gray900);
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 140%; /* 58.8px */
+        }
+    }
+    .circle-wrap{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 86px;
+        .circle{
+            position: relative;
+            width: 642px;
+            height: 642px;
+            background: var(--gray150);
+            box-shadow: 0px 4px 10px 0px rgba(186, 186, 186, 0.25) inset;
+            border-radius: 50%;
+            overflow: hidden;
+            > .phone{
+                position: absolute;
+                left:50%;
+                top:80px;
+                transform: translateX(-50%);
+                z-index: 9;
+            }
+        }
+        .obj{
+            position: absolute;
+            z-index: 8;
+            &.obj01{
+                top:0;
+                left: 0;
+            }
+            &.obj02{
+                top:0;
+                right: 0;
+            }
+            &.obj03{
+                bottom:0;
+                left: 0;
+            }
+            &.obj04{
+                bottom:0;
+                right: 0;
+            }
+        }
+    }
+}
+//섹션02
+.section02{
+    margin-top: 100px;
+    > .inner{
+        max-width: 100% !important;
+    }
+    .sticker-container{
+        display: flex;
+        justify-content: center;
+        padding: 92px 0 181px;
+        box-sizing: border-box;
+        .sticker-wrap{
+            position: relative;
+            > .sticker01 {
+                position: absolute;
+                top:0;
+                left: 0;
+                transform: rotate(-15deg);
+            }
+        }
+    }
+    .mbti-container{
+        position: relative;
+        background: var(--gray100);
+        overflow: hidden;
+        padding: 160px 0;
+        .mbti-wrap{
+            display: flex;
+            flex-direction: column;
+            gap: 68px;
+            .mbti-box{
+                display: flex;
+                gap: 120px;
+                &.top{
+                    margin-left: 200px;
+                }
+                &.bottom{
+                    margin-left: 400px;
+                }
+            }
+        }
+    }
+}
+
+//섹션03
+.section03{}
